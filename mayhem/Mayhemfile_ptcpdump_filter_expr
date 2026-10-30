@@ -1,0 +1,9 @@
+project: savantenvs/ptcpdump
+target: ptcpdump_filter_expr
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ptcpdump_filter_expr/testsuite
+cmds:
+  - cmd: /mayhem/ptcpdump_filter_expr
+    libfuzzer: true
+    timeout: 5

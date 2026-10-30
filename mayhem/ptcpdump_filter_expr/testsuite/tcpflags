@@ -1,0 +1,1 @@
+ip[2:2] > 576 and (tcp[tcpflags] & (tcp-syn|tcp-fin) != 0)

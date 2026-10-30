@@ -1,0 +1,9 @@
+project: savantenvs/ptcpdump
+target: ptcpdump_gosym_elf
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ptcpdump_gosym_elf/testsuite
+cmds:
+  - cmd: /mayhem/ptcpdump_gosym_elf
+    libfuzzer: true
+    timeout: 5
